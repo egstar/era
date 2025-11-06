@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Creative Marine Services & Fabrication",
+    "subtitle": "Specialized marine maintenance, certified underwater services, and precision fabrication to extend the life and performance of your fleet.",
+    "cta": {
+      "primary": "Request a Quote",
+      "secondary": "See Projects"
+    },
+    "cardText": "Precision engineering. Certified teams. Rapid response.",
+    "quickTitle": "24/7 Emergency",
+    "quickDetail": "Underwater welding & repairs"
+  },
+  "hero_stat1": {
+    "value": "15+",
+    "label": "Years experience"
+  },
+  "hero_stat2": {
+    "value": "1,200+",
+    "label": "Projects completed"
+  },
+  "hero_stat3": {
+    "value": "50+",
+    "label": "Certified technicians"
+  },
+  "about": {
+    "title": "About Era Marine Services",
+    "lead": "Era Marine Services combines deep engineering expertise with certified technicians to deliver full-cycle marine repair, maintenance, and fabrication services.",
+    "point1": "Certified underwater welding and inspection.",
+    "point2": "Specialized diesel engine overhaul and governor services.",
+    "point3": "Precision steel fabrication and structural repairs."
+  },
+  "services": {
+    "title": "What We Do"
+  },
+  "sections": {
+    "fabrication": {
+      "title": "Precision Marine Fabrication",
+      "description": "Certified welding, steel renewals, and structural repairs using international classification standards.",
+      "sub1": "Class-approved hull & deck repairs",
+      "sub2": "Precision steel cutting & plate renewal"
+    },
+    "subsea": {
+      "title": "Subsea & Diving",
+      "description": "UWILD inspections, hull cleaning, prop polishing and emergency underwater repairs.",
+      "sub1": "In-water surveys (UWILD)",
+      "sub2": "Hull cleaning & propeller polishing"
+    },
+    "engine": {
+      "title": "Engine Overhaul & Testing",
+      "description": "Full marine diesel overhauls, FIP refurbishment and governor calibration (Woodward UG8).",
+      "sub1": "Fuel injection pump overhaul (FIP)",
+      "sub2": "Governor service & calibration (UG8)"
+    },
+    "mechanics": {
+      "title": "Mechanical & Propulsion",
+      "description": "Gearbox repair, shaft alignment and general mechanical fabrication.",
+      "sub1": "Gearbox & transmission overhauls",
+      "sub2": "Precision shaft alignment"
+    },
+    "electrical": {
+      "title": "Electrical & Automation",
+      "description": "Navigation, GMDSS, distribution panels and automation diagnostics.",
+      "sub1": "Navigation & communication systems",
+      "sub2": "Generators and power distribution"
+    },
+    "hvac": {
+      "title": "HVAC & Refrigeration",
+      "description": "Marine HVAC installation and cold store refurbishment for cargo safety.",
+      "sub1": "Central & split AC maintenance",
+      "sub2": "Provision refrigeration overhaul"
+    }
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "project1": {
+      "title": "Hull Renewal - M/V Polaris",
+      "location": "Alexandria Shipyard",
+      "summary": "Major hull plate replacement and structural reinforcement for a coastal cargo vessel."
+    },
+    "project2": {
+      "title": "UWILD & Propeller Polish - S/V Nova",
+      "location": "Port Said Anchoring Area",
+      "summary": "In-water survey, hull cleaning and propeller polishing to restore fuel efficiency."
+    },
+    "project3": {
+      "title": "Engine Overhaul - Trawler Orion",
+      "location": "Damietta Repair Yard",
+      "summary": "Complete engine overhaul and governor recalibration improving fuel performance."
+    }
+  },
+  "partners": {
+    "title": "Our Partners"
+  },
+  "vision": {
+    "title": "Our Vision",
+    "text": "To be the trusted regional leader in marine maintenance and fabrication, delivering safe, efficient and sustainable solutions."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "intro": "Provide integrated marine services that maximize uptime and asset life through:",
+    "point1": "Highest quality workmanship and certified procedures.",
+    "point2": "Innovative, fuel-efficient solutions.",
+    "point3": "Strict safety and regulatory compliance.",
+    "point4": "Long-term client partnerships."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "lead": "Contact our operations team for quotes, emergency support and project enquiries.",
+    "addressTitle": "Address",
+    "address": "Portside Industrial Area, Alexandria, Egypt",
+    "phoneTitle": "Phone",
+    "phone": "+20 000 000 0000",
+    "emailTitle": "Email",
+    "email": "info@eramsco.com",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "you@company.com",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "about": "Era Marine Services — precision engineering and certified marine services.",
+    "linksTitle": "Quick Links",
+    "contactTitle": "Contact Us",
+    "follow": "Follow us",
+    "followText": "Connect with Era Marine on social networks.",
+    "copyright": "All rights reserved - Era Marine Services. © {year}"
+  }
+}
