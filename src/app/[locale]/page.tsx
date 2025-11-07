@@ -10,6 +10,10 @@ import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 
 // Fonts
 import { Inter, Cairo } from 'next/font/google';
+import { MdDeveloperMode } from 'react-icons/md';
+import { CgCodeSlash } from 'react-icons/cg';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+import Partners from '@/components/Partners';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo', display: 'swap' });
 
@@ -33,51 +37,41 @@ export default function CreativeEraMarinePage() {
     >
       {/* Header (gradient) */}
       <header className="fixed w-full z-50">
-        <div className="backdrop-blur-md bg-gradient-to-r from-[#012E40]/80 via-[#014D6C]/70 to-[#00CFFF]/60 border-b border-white/10">
+        <div className="backdrop-blur-lg bg-linear-to-br from-white/80 via-gray-100/70 to-gray-50/60 border-b border-white/10 drop-shadow-md">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <Link href="/" className="flex items-center gap-3">
-                <Image src="/assets/logo_w.png" alt="Era Marine" width={48} height={48} priority />
+                <Image src="/assets/logo.png" alt="Era Marine" width={70} height={70} priority />
                 <div>
-                  <div className="text-lg font-extrabold text-white">Era Marine</div>
-                  <div className="text-xs text-white/80 -mt-0.5">Precision Marine Services</div>
+                  <div className="text-lg font-extrabold text-blue-900">Era Marine</div>
+                  <div className="text-xs text-slate-700/80 -mt-0.5">Precision Marine Services</div>
                 </div>
               </Link>
             </div>
 
-            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-white/95">
-              <a href="#about" className="hover:text-white/100 transition">
+            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600/95">
+              <a href="#about" className="hover:text-slate-900 transition">
                 {t('nav.about')}
               </a>
-              <a href="#services" className="hover:text-white/100 transition">
+              <a href="#services" className="hover:text-slate-900 transition">
                 {t('nav.services')}
               </a>
-              <a href="#projects" className="hover:text-white/100 transition">
+              <a href="#projects" className="hover:text-slate-900 transition">
                 {t('nav.projects')}
               </a>
-              <a href="#partners" className="hover:text-white/100 transition">
+              <a href="#partners" className="hover:text-slate-900 transition">
                 {t('nav.partners')}
               </a>
-              <a href="#contact" className="hover:text-white/100 transition">
+              <a href="#contact" className="hover:text-slate-900 transition">
                 {t('nav.contact')}
               </a>
 
-              <Link
-                href={switchTo}
-                className="ml-2 px-3 py-1 rounded-full bg-gradient-to-r from-[#00CFFF] to-[#38B6FF] text-[#012E40] text-sm font-semibold shadow"
-              >
-                {pathname.startsWith('/ar') ? 'EN' : 'AR'}
-              </Link>
+             <LanguageSwitcher />
             </nav>
 
             {/* Mobile actions */}
             <div className="md:hidden flex items-center gap-3">
-              <Link
-                href={switchTo}
-                className="px-3 py-1 rounded-full bg-[#00A7D6] text-white text-sm font-semibold"
-              >
-                {pathname.startsWith('/ar') ? 'EN' : 'AR'}
-              </Link>
+              <LanguageSwitcher />
             </div>
           </div>
         </div>
@@ -86,7 +80,7 @@ export default function CreativeEraMarinePage() {
       {/* HERO */}
       <motion.section
         style={{ y: yHero }}
-        className="relative min-h-[88vh] md:min-h-[92vh] flex items-center overflow-hidden"
+        className="relative min-h-screen md:min-h-[200vh] lg:min-h-[89vh]  flex items-center overflow-hidden"
       >
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -99,12 +93,12 @@ export default function CreativeEraMarinePage() {
           />
           <motion.div
             style={{ opacity: overlayOpacity }}
-            className="absolute inset-0 bg-gradient-to-br from-[#012E40]/85 via-[#014D6C]/55 to-[#00CFFF]/30"
+            className="absolute inset-0 bg-linear-to-br from-[#012E40]/85 via-[#014D6C]/55 to-[#00CFFF]/30"
           />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center text-center lg:text-left">
             {/* Left: text */}
             <motion.div
@@ -192,7 +186,7 @@ export default function CreativeEraMarinePage() {
         </div>
 
         {/* Bottom Wave Divider */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-0">
           <svg
             className="relative block w-[calc(200%+1.3px)] h-[120px]"
             xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +202,7 @@ export default function CreativeEraMarinePage() {
       </motion.section>
 
       {/* ABOUT */}
-      <section id="about" className="py-16 bg-white text-[#012E40]">
+      <section id="about" className="py-16 bg-white text-[#012E40] mt-15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, x: -24 }}
@@ -297,22 +291,10 @@ export default function CreativeEraMarinePage() {
       </section>
 
       {/* PARTNERS */}
-      <section id="partners" className="py-12 bg-sky-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-xl sm:text-2xl font-bold text-[#014D6C] mb-6">{t('partners.title')}</h3>
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
-            {/* Use your partner logos - placeholders kept */}
-            {[1, 2, 3, 4, 5, 6].map((n) => (
-              <div key={n} className="p-3 bg-white/60 rounded-lg shadow flex items-center justify-center">
-                <Image src="/assets/npartners.png" alt="partner" width={120} height={60} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Partners />
 
       {/* VISION & MISSION */}
-      <section className="py-16 bg-gradient-to-r from-[#E6FBFF] to-white">
+      <section className="py-16 bg-linear-to-r from-[#E6FBFF] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h4 className="text-xl font-bold text-[#014D6C] mb-3">{t('vision.title')}</h4>
@@ -386,10 +368,10 @@ export default function CreativeEraMarinePage() {
       </section>
 
       {/* FOOTER (gradient) */}
-      <footer className="bg-gradient-to-r from-[#012E40] via-[#014D6C] to-[#00CFFF] text-white py-10">
+      <footer className="bg-linear-to-r from-[#012E40] via-[#014D6C] to-[#00CFFF] text-white py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-start">
-            <Image src="/assets/logo_w.png" alt="Era Marine" width={110} height={110} />
+            <Image src="/assets/logo.png" alt="Era Marine" width={110} height={110} />
             <p className="mt-3 text-sm text-white/90">{t('footer.about')}</p>
           </div>
 
@@ -416,6 +398,7 @@ export default function CreativeEraMarinePage() {
         </div>
 
         <div className="mt-8 text-center text-sm opacity-90">{t('footer.copyright', { year: new Date().getFullYear() })}</div>
+        <div className='text-xs flex w-full items-center justify-center gap-1'><CgCodeSlash /> Developed By <Link className='font-bold underline decoration-1 decoration-dotted' target={'_blank'} href={'https://burhams.com'} title='Burham B. Soliman' content='Burham B. Soliman'>Burham B. Soliman</Link> | <Link className='font-bold underline decoration-1 decoration-dotted' target={'_blank'} href={'https://pixil.pro'} title='Pixil Pro Ltd.' content='Pixil Pro Ltd.'>PixilPro Ltd.</Link></div>
       </footer>
     </main>
   );

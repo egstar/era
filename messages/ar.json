@@ -96,7 +96,8 @@
     }
   },
   "partners": {
-    "title": "شركاؤنا"
+    "title": "شركاؤنا",
+      "description": ""
   },
   "vision": {
     "title": "رؤيتنا",
