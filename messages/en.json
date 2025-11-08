@@ -17,28 +17,10 @@
     "quickTitle": "24/7 Emergency",
     "quickDetail": "Underwater welding & repairs"
   },
-  "hero_stat1": {
-    "value": "15+",
-    "label": "Years experience"
-  },
-  "hero_stat2": {
-    "value": "1,200+",
-    "label": "Projects completed"
-  },
-  "hero_stat3": {
-    "value": "50+",
-    "label": "Certified technicians"
-  },
-  "about": {
-    "title": "About Era Marine Services",
-    "lead": "Era Marine Services combines deep engineering expertise with certified technicians to deliver full-cycle marine repair, maintenance, and fabrication services.",
-    "point1": "Certified underwater welding and inspection.",
-    "point2": "Specialized diesel engine overhaul and governor services.",
-    "point3": "Precision steel fabrication and structural repairs."
-  },
-  "services": {
-    "title": "What We Do"
-  },
+  "hero_stat1": { "value": "15+", "label": "Years experience" },
+  "hero_stat2": { "value": "1,200+", "label": "Projects completed" },
+  "hero_stat3": { "value": "50+", "label": "Certified technicians" },
+  "services": { "title": "Oure Core Services" },
   "sections": {
     "fabrication": {
       "title": "Precision Marine Fabrication",
@@ -101,25 +83,49 @@
   },
   "vision": {
     "title": "Our Vision",
-    "text": "To be the trusted regional leader in marine maintenance and fabrication, delivering safe, efficient and sustainable solutions."
+    "text": "To be the leading and most trusted partner in delivering high-quality marine maintenance and services solutions in the region, setting a new benchmark for operational excellence and professionalism in the maritime services sector."
   },
   "mission": {
     "title": "Our Mission",
-    "intro": "Provide integrated marine services that maximize uptime and asset life through:",
-    "point1": "Highest quality workmanship and certified procedures.",
-    "point2": "Innovative, fuel-efficient solutions.",
-    "point3": "Strict safety and regulatory compliance.",
-    "point4": "Long-term client partnerships."
+    "intro": "Our mission is centered on providing our clients with integrated and precise marine maintenance services by:",
+    "point1": "Quality and Professionalism: Ensuring the highest standards of quality in every service, from specialized diesel engine maintenance (Governors and FIP) to certified underwater welding.",
+    "point2": "Innovation and Efficiency: Utilizing the latest technology and best practices to enhance the operational efficiency and fuel economy of our clients' vessels",
+    "point3": "Safety and Compliance: Maintaining a safe working environment and strictly adhering to all international regulations and standards to ensure full compliance.",
+    "point4": "Sustainable Partnership: Building long-term relationships with our clients based on trust, rapid response, and continuous value delivery."
+  },
+  "about": {
+    "head": "About Us",
+    "title": "Your Trusted Partner for Integrated Marine Services and Maintenance",
+    "lead": "Era Maritim Service is a leading company specializing in providing comprehensive marine maintenance solutions, committed to ensuring the optimal performance and operational safety of all types of vessels and offshore structures. We combine deep engineering expertise with certified technicians to deliver unparalleled service.",
+    "sections": {
+      "experience": {
+        "head":"Our Experience",
+        "title":"Focused on Precision and Reliability",
+        "points": {
+          "p1":"Specialized Engine Maintenance: Unique expertise in marine diesel engine overhauls, with precise specialization in Governor Woodword UG8 and Fuel Injection Pump (FIP) maintenance to guarantee optimal fuel efficiency.",
+          "p2":"Fabrication and Structural Engineering: A certified team to execute all marine welding and cutting works, including class-approved steel structural repairs.",
+          "p3":"Subsea Services: Professional commercial diving operations for UWILD inspection, propeller polishing, and executing underwater welding repairs, minimizing the need for dry-docking."
+        }
+      },
+      "value": {
+        "head": "Core Value",
+        "title": "Why Choose Era Maritim Service?",
+        "points": {
+          "p1":"Certified Quality: All our services are executed according to the highest international standards and classification society regulations.",
+          "p2":"Rapid Response: We understand the critical nature of time in the maritime industry and are committed to providing fast, effective solutions to minimize operational downtime.",
+          "p3":"Experienced Team: Our engineers and technicians possess years of hands-on experience in the maritime sector, ensuring execution precision and effective diagnostics."
+        }
+      },
+      "footer": "Era Maritim Service, Where Maritime Expertise Meets Commitment to Excellence."
+    }
   },
   "contact": {
     "title": "Get in touch",
     "lead": "Contact our operations team for quotes, emergency support and project enquiries.",
     "addressTitle": "Address",
-    "address": "Portside Industrial Area, Alexandria, Egypt",
     "phoneTitle": "Phone",
-    "phone": "+20 000 000 0000",
     "emailTitle": "Email",
-    "email": "info@eramsco.com",
+    "address":"Freeport Building, Floor no.4, Office (M13), Sharq District, Portsaid - Egypt",
     "form": {
       "name": "Name",
       "email": "Email",
@@ -136,6 +142,7 @@
     "contactTitle": "Contact Us",
     "follow": "Follow us",
     "followText": "Connect with Era Marine on social networks.",
-    "copyright": "All rights reserved - Era Marine Services. © {year}"
+    "copyright": "© {year} Era Marine Services. All rights reserved.",
+    "dev": "Developed by"
   }
 }

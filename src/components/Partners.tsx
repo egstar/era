@@ -18,7 +18,7 @@ export default function Partners() {
   ];
 
   return (
-    <section className="relative bg-linear-to-b from-sky-50 to-white py-20">
+    <section id="partners" className="relative bg-linear-to-b from-gray-200 to-white py-20 pt-25">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
