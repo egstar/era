@@ -308,7 +308,7 @@ export default function CreativeEraMarinePage () {
           />
           <motion.div
             style={{ opacity: overlayOpacity }}
-            className='absolute inset-0 bg-linear-to-br from-[#012E40]/85 via-[#014D6C]/55 to-[#00CFFF]/30'
+            className='absolute inset-0 bg-linear-to-br from-gray-800/85 via-gray-800/55 to-gray-800/30'
           />
         </div>
 
@@ -728,19 +728,19 @@ export default function CreativeEraMarinePage () {
           <div className='text-center'>
             <h5 className='font-semibold mb-3 text-sky-800'> {t('footer.linksTitle')} </h5>
             <ul className='space-y-2 text-sm'>
-              <li>
+              <li className='hover:text-sky-600'>
                 <a href='#about'>{t('nav.about')}</a>
               </li>
-              <li>
+              <li className='hover:text-sky-600'>
                 <a href='#services'>{t('nav.services')}</a>
               </li>
-              <li>
+              <li className='hover:text-sky-600'>
                 <a href='#projects'>{t('nav.projects')}</a>
               </li>
-              <li>
+              <li className='hover:text-sky-600'>
                 <a href='#partners'>{t('nav.partners')}</a>
               </li>
-              <li>
+              <li className='hover:text-sky-600'>
                 <a href='#contact'>{t('nav.contact')}</a>
               </li>
             </ul>
