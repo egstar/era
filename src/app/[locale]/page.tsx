@@ -622,10 +622,10 @@ export default function CreativeEraMarinePage () {
                   <div className='font-semibold'>{t('contact.phoneTitle')}</div>
                   <div className='text-sm mt-1 flex flex-col'>
                     {[
-                      { loc: { ar: 'مصر', en: 'EG' }, phone: '+201019835820' },
-                      { loc: { en: 'QA', ar: 'قطر' }, phone: '+97430949099' },
+                      { loc: { ar: 'مصر', en: 'Egypt' }, phone: '+201019835820' },
+                      { loc: { en: 'Qatar', ar: 'قطر' }, phone: '+97430949099' },
                       {
-                        loc: { ar: 'الامارات', en: 'AE' },
+                        loc: { ar: 'الامارات', en: 'U.A.E' },
                         phone: '+971586860282'
                       }
                     ].map(({ loc, phone }: any) => {
