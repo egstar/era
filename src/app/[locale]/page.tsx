@@ -22,6 +22,7 @@ import Partners from '@/components/Partners'
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { StaggeredFade } from '@/components/MotionText'
 import { TfiEmail } from 'react-icons/tfi'
+import Header from '@/components/Header'
 
 const services: any = {
   en: [
@@ -239,63 +240,12 @@ export default function CreativeEraMarinePage () {
       style={{ WebkitFontSmoothing: 'antialiased' }}
     >
       {/* Header (gradient) */}
-      <header className='fixed w-full z-50'>
-        <div className='backdrop-blur-lg bg-linear-to-br from-white/80 via-gray-100/70 to-gray-50/60 border-b border-white/10 drop-shadow-md'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between'>
-            <div className='flex items-center gap-3'>
-              <Link href='/' className='flex items-center gap-3'>
-                <Image
-                  src='/assets/era.png'
-                  alt='Era Marine'
-                  width={70}
-                  height={70}
-                  priority
-                  className='rounded-full'
-                />
-                <div>
-                  <Image
-                    src='/assets/logo_texts.png'
-                    alt='Era Marine'
-                    width={200}
-                    height={70}
-                    priority
-                  />
-                </div>
-              </Link>
-            </div>
-
-            <nav className='hidden md:flex items-center gap-6 text-sm font-medium text-gray-600/95'>
-              <a href='#about' className='hover:text-slate-900 transition'>
-                {t('nav.about')}
-              </a>
-              <a href='#services' className='hover:text-slate-900 transition'>
-                {t('nav.services')}
-              </a>
-              <a href='#projects' className='hover:text-slate-900 transition'>
-                {t('nav.projects')}
-              </a>
-              <a href='#partners' className='hover:text-slate-900 transition'>
-                {t('nav.partners')}
-              </a>
-              <a href='#contact' className='hover:text-slate-900 transition'>
-                {t('nav.contact')}
-              </a>
-
-              <LanguageSwitcher />
-            </nav>
-
-            {/* Mobile actions */}
-            <div className='md:hidden flex items-center gap-3'>
-              <LanguageSwitcher />
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* HERO */}
       <motion.section
         style={{ y: yHero }}
-        className='relative min-h-screen md:min-h-[200vh] lg:min-h-[89vh]  flex items-center overflow-hidden'
+        className='relative min-h-[110vh] md:min-h-[220vh] lg:min-h-[89vh]  flex items-center overflow-hidden'
       >
         {/* Background Image */}
         <div className='absolute inset-0'>
@@ -372,14 +322,11 @@ export default function CreativeEraMarinePage () {
             >
               <div className='relative w-full max-w-md'>
                 <div className='rounded-3xl bg-white/6 backdrop-blur-md p-6 shadow-2xl border border-white/10'>
-                  <Image
-                    src='/assets/logo_w.png'
-                    alt='Era Marine logo'
-                    width={260}
-                    height={260}
-                    className='mx-auto rounded-md'
-                    priority
-                  />
+                  <div className='w-full flex items-center justify-evenly text-center text-white/60'>
+
+                    <FaShip className='w-20 h-auto drop-shadow-2xl' />
+                    <FaWrench className='w-20 h-auto drop-shadow-2xl' />
+                  </div>
                   <p className='mt-6 text-sm text-sky-100/90 text-center'>
                     {t('hero.cardText')}
                   </p>
@@ -616,8 +563,49 @@ export default function CreativeEraMarinePage () {
             <h3 className='text-2xl font-bold text-[#014D6C] mb-4'>
               {t('contact.title')}
             </h3>
-            <p className='text-slate-700 mb-6'>{t('contact.lead')}</p>
+            <p className='text-slate-700 mb-3'>{t('contact.lead')}</p>
+          </div>
+          <div></div>
+          <div className='bg-gray-50 p-6 rounded-2xl shadow-lg'>
+            <form className='space-y-4'>
+              <div>
+                <label className='text-sm font-medium text-slate-700'>
+                  {t('contact.form.name')}
+                </label>
+                <input
+                  className='mt-2 w-full rounded-md p-3 border border-slate-200'
+                  placeholder={t('contact.form.namePlaceholder')}
+                />
+              </div>
+              <div>
+                <label className='text-sm font-medium text-slate-700'>
+                  {t('contact.form.email')}
+                </label>
+                <input
+                  className='mt-2 w-full rounded-md p-3 border border-slate-200'
+                  placeholder={t('contact.form.emailPlaceholder')}
+                />
+              </div>
+              <div>
+                <label className='text-sm font-medium text-slate-700'>
+                  {t('contact.form.message')}
+                </label>
+                <textarea
+                  className='mt-2 w-full rounded-md p-3 border border-slate-200'
+                  rows={5}
+                  placeholder={t('contact.form.messagePlaceholder')}
+                />
+              </div>
+              <button
+                type='button'
+                className='inline-flex items-center gap-3 px-5 py-3 rounded-full bg-sky-950 text-white font-semibold cursor-pointer'
+              >
+                {t('contact.form.submit')}
+              </button>
+            </form>
+          </div>
 
+          <div>
             <div className='space-y-4 text-slate-700'>
               <div className='flex items-start gap-3'>
                 <FiMapPin className='text-sky-700 mt-1' />
@@ -670,125 +658,22 @@ export default function CreativeEraMarinePage () {
               </div>
             </div>
           </div>
-
-          <div className='bg-gray-50 p-6 rounded-2xl shadow-lg'>
-            <form className='space-y-4'>
-              <div>
-                <label className='text-sm font-medium text-slate-700'>
-                  {t('contact.form.name')}
-                </label>
-                <input
-                  className='mt-2 w-full rounded-md p-3 border border-slate-200'
-                  placeholder={t('contact.form.namePlaceholder')}
-                />
-              </div>
-              <div>
-                <label className='text-sm font-medium text-slate-700'>
-                  {t('contact.form.email')}
-                </label>
-                <input
-                  className='mt-2 w-full rounded-md p-3 border border-slate-200'
-                  placeholder={t('contact.form.emailPlaceholder')}
-                />
-              </div>
-              <div>
-                <label className='text-sm font-medium text-slate-700'>
-                  {t('contact.form.message')}
-                </label>
-                <textarea
-                  className='mt-2 w-full rounded-md p-3 border border-slate-200'
-                  rows={5}
-                  placeholder={t('contact.form.messagePlaceholder')}
-                />
-              </div>
-              <button
-                type='button'
-                className='inline-flex items-center gap-3 px-5 py-3 rounded-full bg-sky-950 text-white font-semibold cursor-pointer'
-              >
-                {t('contact.form.submit')}
-              </button>
-            </form>
-          </div>
         </div>
       </section>
 
       {/* FOOTER (gradient) */}
       <footer className='bg-linear-to-t from-gray-300 to-white backdrop-blur-2xl text-slate-700 py-10 text-center'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8  '>
-          <div className='flex flex-col items-center'>
-            <Image
-              src='/assets/logo.png'
-              alt='Era Marine'
-              width={110}
-              height={110}
-            />
-            <p className='mt-3 text-sm text-sky-800/90'>{t('footer.about')}</p>
-          </div>
-
-          <div className='text-center'>
-            <h5 className='font-semibold mb-3 text-sky-800'> {t('footer.linksTitle')} </h5>
-            <ul className='space-y-2 text-sm'>
-              <li className='hover:text-sky-600'>
-                <a href='#about'>{t('nav.about')}</a>
-              </li>
-              <li className='hover:text-sky-600'>
-                <a href='#services'>{t('nav.services')}</a>
-              </li>
-              <li className='hover:text-sky-600'>
-                <a href='#projects'>{t('nav.projects')}</a>
-              </li>
-              <li className='hover:text-sky-600'>
-                <a href='#partners'>{t('nav.partners')}</a>
-              </li>
-              <li className='hover:text-sky-600'>
-                <a href='#contact'>{t('nav.contact')}</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className='w-full text-start self-center px-6'>
-            <h5 className='font-semibold mb-3 text-center text-sky-800'>
-              {t('footer.contactTitle')}
-            </h5>
-            <div className='text-sm flex flex-row w-full gap-3 items-center justify-start'>
-              <TfiEmail className='text-md' />
-              <Link
-                href={`mailto:info@eramsco.com`}
-                target={'_blank'}
-                className='text-xs uppercase font-bold'
-              >{`info@eramsco.com`}</Link>
-            </div>
-            <div className='text-sm mt-1 flex flex-col items-start'>
-              {[
-                { loc: { ar: 'مصر', en: 'EG' }, phone: '+201019835820' },
-                { loc: { en: 'QA', ar: 'قطر' }, phone: '+97430949099' },
-                { loc: { ar: 'الامارات', en: 'AE' }, phone: '+971586860282' }
-              ].map(({ loc, phone }: any) => {
-                return (
-                  <span className='gap-2 flex items-center text-start' key={loc[locale]}>
-                    <b className='w-[20%] text-start text-sm font-normal'>({loc[locale]})</b>
-                    <Link href={`tel:${phone}`} target='_blank' className='font-bold text-sm'>
-                      {locale == 'ar'
-                        ? phone
-                            .replaceAll(/\+/g, '00')
-                            .replace(/\d/g, (e: any) => `٠١٢٣٤٥٦٧٨٩`[e])
-                        : phone}
-                    </Link>
-                  </span>
-                )
-              })}
-            </div>
-            <div className='mt-4 flex gap-3 w-full text-center items-center justify-center'>
-              <a className='w-10 h-10 flex items-center justify-center rounded-full  hover:scale-120 hover:text-blue-600  transition-all duration-300 cursor-pointer bg-white/70'>
-                <FaFacebook className=' w-7 h-7 ' />
-              </a>
-              <a className='w-10 h-10 flex items-center justify-center rounded-full hover:scale-120 hover:text-sky-700  transition-all duration-300 cursor-pointer bg-white/70'>
-                <FaLinkedin className='rounded-lg w-7 h-7' />
-              </a>
-              <a className='w-10 h-10 flex items-center justify-center rounded-full hover:scale-120 hover:text-orange-800  transition-all duration-300 cursor-pointer bg-white/70'>
-                <FaInstagram className=' w-7 h-7 ' />
-              </a>
-            </div>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-1 gap-8  '>
+          <div className='mt-4 flex gap-3 w-full text-center items-center justify-center'>
+            <a className='w-10 h-10 flex items-center justify-center rounded-full  hover:scale-120 hover:text-blue-600  transition-all duration-300 cursor-pointer bg-white/70'>
+              <FaFacebook className=' w-7 h-7 ' />
+            </a>
+            <a className='w-10 h-10 flex items-center justify-center rounded-full hover:scale-120 hover:text-sky-700  transition-all duration-300 cursor-pointer bg-white/70'>
+              <FaLinkedin className='rounded-lg w-7 h-7' />
+            </a>
+            <a className='w-10 h-10 flex items-center justify-center rounded-full hover:scale-120 hover:text-orange-800  transition-all duration-300 cursor-pointer bg-white/70'>
+              <FaInstagram className=' w-7 h-7 ' />
+            </a>
           </div>
         </div>
 
